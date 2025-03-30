@@ -74,9 +74,7 @@ public class Publisher
         return "Publisher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phone='" + phone + '\'' +
-                ", bookList=" + bookList.stream().toList() +
+                ", address='" + address +
                 '}';
     }
 }

@@ -1,98 +1,142 @@
-INSERT INTO publisher (name, address, phone) VALUES ('Istanbul Publishing House', 'Istanbul, Turkey', '0212-111-2222');
-INSERT INTO publisher (name, address, phone) VALUES ('Ankara Books', 'Ankara, Turkey', '0312-333-4444');
-INSERT INTO publisher (name, address, phone) VALUES ('Izmir Press', 'Izmir, Turkey', '0232-555-6666');
-INSERT INTO publisher (name, address, phone) VALUES ('Antalya Literature', 'Antalya, Turkey', '0242-777-8888');
-INSERT INTO publisher (name, address, phone) VALUES ('Bursa Editions', 'Bursa, Turkey', '0224-999-0000');
-INSERT INTO publisher (name, address, phone) VALUES ('Adana Writers', 'Adana, Turkey', '0322-101-2020');
-INSERT INTO publisher (name, address, phone) VALUES ('Konya Classics', 'Konya, Turkey', '0332-303-4040');
-INSERT INTO publisher (name, address, phone) VALUES ('Trabzon Tales', 'Trabzon, Turkey', '0462-505-6060');
-INSERT INTO publisher (name, address, phone) VALUES ('Eskişehir Storytellers', 'Eskişehir, Turkey', '0222-707-8080');
-INSERT INTO publisher (name, address, phone) VALUES ('Gaziantep Books', 'Gaziantep, Turkey', '0342-909-0101');
-INSERT INTO publisher (name, address, phone) VALUES ('Kayseri House', 'Kayseri, Turkey', '0352-121-3141');
-INSERT INTO publisher (name, address, phone) VALUES ('Mersin Media', 'Mersin, Turkey', '0324-151-6171');
-INSERT INTO publisher (name, address, phone) VALUES ('Samsun Press', 'Samsun, Turkey', '0362-212-2232');
-INSERT INTO publisher (name, address, phone) VALUES ('Denizli Publications', 'Denizli, Turkey', '0252-242-5262');
-INSERT INTO publisher (name, address, phone) VALUES ('Sivas Writers', 'Sivas, Turkey', '0342-272-7282');
-INSERT INTO publisher (name, address, phone) VALUES ('Malatya Memoirs', 'Malatya, Turkey', '0422-292-9303');
-INSERT INTO publisher (name, address, phone) VALUES ('Van Verses', 'Van, Turkey', '0432-313-1415');
-INSERT INTO publisher (name, address, phone) VALUES ('Diyarbakır Diaries', 'Diyarbakır, Turkey', '0412-323-3343');
-INSERT INTO publisher (name, address, phone) VALUES ('Rize Reads', 'Rize, Turkey', '0464-343-5454');
-INSERT INTO publisher (name, address, phone) VALUES ('Sakarya Stories', 'Sakarya, Turkey', '0264-353-6565');
+INSERT INTO publisher (name, address, phone)
+VALUES ('Istanbul Publishing House', 'Istanbul, Turkey', '0212-111-2222'),
+       ('Ankara Books', 'Ankara, Turkey', '0312-333-4444'),
+       ('Izmir Press', 'Izmir, Turkey', '0232-555-6666'),
+       ('Antalya Literature', 'Antalya, Turkey', '0242-777-8888'),
+       ('Bursa Editions', 'Bursa, Turkey', '0224-999-0000'),
+       ('Adana Writers', 'Adana, Turkey', '0322-101-2020'),
+       ('Konya Classics', 'Konya, Turkey', '0332-303-4040'),
+       ('Trabzon Tales', 'Trabzon, Turkey', '0462-505-6060'),
+       ('Eskişehir Storytellers', 'Eskişehir, Turkey', '0222-707-8080'),
+       ('Gaziantep Books', 'Gaziantep, Turkey', '0342-909-0101'),
+       ('Kayseri House', 'Kayseri, Turkey', '0352-121-3141'),
+       ('Mersin Media', 'Mersin, Turkey', '0324-151-6171'),
+       ('Samsun Press', 'Samsun, Turkey', '0362-212-2232'),
+       ('Denizli Publications', 'Denizli, Turkey', '0252-242-5262'),
+       ('Sivas Writers', 'Sivas, Turkey', '0342-272-7282'),
+       ('Malatya Memoirs', 'Malatya, Turkey', '0422-292-9303'),
+       ('Van Verses', 'Van, Turkey', '0432-313-1415'),
+       ('Diyarbakır Diaries', 'Diyarbakır, Turkey', '0412-323-3343'),
+       ('Rize Reads', 'Rize, Turkey', '0464-343-5454'),
+       ('Sakarya Stories', 'Sakarya, Turkey', '0264-353-6565');
 
-INSERT INTO author (first_name, last_name) VALUES ('Ahmet', 'Yılmaz');
-INSERT INTO author (first_name, last_name) VALUES ('Mehmet', 'Demir');
-INSERT INTO author (first_name, last_name) VALUES ('Ayşe', 'Kara');
-INSERT INTO author (first_name, last_name) VALUES ('Fatma', 'Çelik');
-INSERT INTO author (first_name, last_name) VALUES ('Emre', 'Arslan');
-INSERT INTO author (first_name, last_name) VALUES ('Selin', 'Aydın');
-INSERT INTO author (first_name, last_name) VALUES ('Burak', 'Öztürk');
-INSERT INTO author (first_name, last_name) VALUES ('Zeynep', 'Şahin');
-INSERT INTO author (first_name, last_name) VALUES ('Can', 'Kılıç');
-INSERT INTO author (first_name, last_name) VALUES ('Ece', 'Güneş');
-INSERT INTO author (first_name, last_name) VALUES ('Mert', 'Kaya');
-INSERT INTO author (first_name, last_name) VALUES ('Elif', 'Özdemir');
-INSERT INTO author (first_name, last_name) VALUES ('Ozan', 'Arslan');
-INSERT INTO author (first_name, last_name) VALUES ('Sena', 'Yıldırım');
-INSERT INTO author (first_name, last_name) VALUES ('Cem', 'Aksoy');
-INSERT INTO author (first_name, last_name) VALUES ('Derya', 'Uysal');
-INSERT INTO author (first_name, last_name) VALUES ('Burcu', 'Polat');
-INSERT INTO author (first_name, last_name) VALUES ('Kerem', 'Gök');
-INSERT INTO author (first_name, last_name) VALUES ('Pelin', 'Acar');
-INSERT INTO author (first_name, last_name) VALUES ('Oya', 'Özer');
+INSERT INTO author (first_name, last_name)
+VALUES ('Ahmet', 'Yılmaz'),
+       ('Mehmet', 'Demir'),
+       ('Ayşe', 'Kara'),
+       ('Fatma', 'Çelik'),
+       ('Emre', 'Arslan'),
+       ('Selin', 'Aydın'),
+       ('Burak', 'Öztürk'),
+       ('Zeynep', 'Şahin'),
+       ('Can', 'Kılıç'),
+       ('Ece', 'Güneş'),
+       ('Mert', 'Kaya'),
+       ('Elif', 'Özdemir'),
+       ('Ozan', 'Arslan'),
+       ('Sena', 'Yıldırım'),
+       ('Cem', 'Aksoy'),
+       ('Derya', 'Uysal'),
+       ('Burcu', 'Polat'),
+       ('Kerem', 'Gök'),
+       ('Pelin', 'Acar'),
+       ('Oya', 'Özer');
 
-INSERT INTO book (title, price, publisher_id) VALUES ('Tutunamayanlar', 45.50, 1);
-INSERT INTO book (title, price, publisher_id) VALUES ('Saatleri Ayarlama Enstitüsü', 39.99, 2);
-INSERT INTO book (title, price, publisher_id) VALUES ('Kürk Mantolu Madonna', 55.75, 3);
-INSERT INTO book (title, price, publisher_id) VALUES ('İnce Mehmed', 40.00, 1);
-INSERT INTO book (title, price, publisher_id) VALUES ('Huzur', 42.25, 4);
-INSERT INTO book (title, price, publisher_id) VALUES ('Anayurt Oteli', 38.50, 2);
-INSERT INTO book (title, price, publisher_id) VALUES ('Yalnızız', 47.00, 5);
-INSERT INTO book (title, price, publisher_id) VALUES ('Sinekli Bakkal', 36.80, 3);
-INSERT INTO book (title, price, publisher_id) VALUES ('Fatih Harbiye', 44.90, 6);
-INSERT INTO book (title, price, publisher_id) VALUES ('Bir Düğün Gecesi', 41.00, 4);
-INSERT INTO book (title, price, publisher_id) VALUES ('Çalıkuşu', 50.30, 7);
-INSERT INTO book (title, price, publisher_id) VALUES ('Aşk-ı Memnu', 53.20, 8);
-INSERT INTO book (title, price, publisher_id) VALUES ('Yaban', 37.40, 2);
-INSERT INTO book (title, price, publisher_id) VALUES ('Eylül', 39.60, 9);
-INSERT INTO book (title, price, publisher_id) VALUES ('Acımak', 43.80, 10);
-INSERT INTO book (title, price, publisher_id) VALUES ('Dokuzuncu Hariciye Koğuşu', 48.00, 11);
-INSERT INTO book (title, price, publisher_id) VALUES ('İstanbul Hatırası', 52.50, 12);
-INSERT INTO book (title, price, publisher_id) VALUES ('Beyaz Kale', 47.90, 13);
-INSERT INTO book (title, price, publisher_id) VALUES ('Karanlıkta Yolculuk', 46.70, 1);
-INSERT INTO book (title, price, publisher_id) VALUES ('Kayıp Aranıyor', 42.10, 2);
+INSERT INTO book (title, price, publisher_id)
+VALUES ('Tutunamayanlar', 45.50, 1),
+       ('Saatleri Ayarlama Enstitüsü', 39.99, 2),
+       ('Kürk Mantolu Madonna', 55.75, 3),
+       ('İnce Mehmed', 40.00, 1),
+       ('Huzur', 42.25, 4),
+       ('Anayurt Oteli', 38.50, 2),
+       ('Yalnızız', 47.00, 5),
+       ('Sinekli Bakkal', 36.80, 3),
+       ('Fatih Harbiye', 44.90, 6),
+       ('Bir Düğün Gecesi', 41.00, 4),
+       ('Çalıkuşu', 50.30, 7),
+       ('Aşk-ı Memnu', 53.20, 8),
+       ('Yaban', 37.40, 2),
+       ('Eylül', 39.60, 9),
+       ('Acımak', 43.80, 10),
+       ('Dokuzuncu Hariciye Koğuşu', 48.00, 11),
+       ('İstanbul Hatırası', 52.50, 12),
+       ('Beyaz Kale', 47.90, 13),
+       ('Karanlıkta Yolculuk', 46.70, 1),
+       ('Kayıp Aranıyor', 42.10, 2),
+       ('Sis ve Gece', 41.25, 14),
+       ('Kafamda Bir Tuhaflık', 49.90, 15),
+       ('Serenad', 55.00, 16),
+       ('Madonna in a Fur Coat', 53.75, 3),
+       ('Benim Adım Kırmızı', 60.40, 17),
+       ('Hayvan Çiftliği', 45.20, 18),
+       ('1984', 50.90, 19),
+       ('Suç ve Ceza', 59.30, 20),
+       ('Kırmızı ve Siyah', 52.80, 5),
+       ('Beyaz Zambaklar Ülkesinde', 48.70, 8),
+       ('Sefiller', 57.99, 10),
+       ('Don Kişot', 62.45, 12),
+       ('Ulysses', 58.30, 11),
+       ('Anna Karenina', 63.10, 6),
+       ('Yeraltından Notlar', 47.80, 9),
+       ('Otomatik Portakal', 49.50, 7),
+       ('Kumarbaz', 46.90, 13),
+       ('Bülbülü Öldürmek', 55.60, 15),
+       ('Şeker Portakalı', 44.75, 16),
+       ('Yüzyıllık Yalnızlık', 56.20, 17);
 
-INSERT INTO book_authors (book_id, authors_id) VALUES (1, 1);
-INSERT INTO book_authors (book_id, authors_id) VALUES (1, 2);
-INSERT INTO book_authors (book_id, authors_id) VALUES (2, 3);
-INSERT INTO book_authors (book_id, authors_id) VALUES (2, 4);
-INSERT INTO book_authors (book_id, authors_id) VALUES (3, 5);
-INSERT INTO book_authors (book_id, authors_id) VALUES (3, 3);
-INSERT INTO book_authors (book_id, authors_id) VALUES (4, 6);
-INSERT INTO book_authors (book_id, authors_id) VALUES (4, 7);
-INSERT INTO book_authors (book_id, authors_id) VALUES (5, 8);
-INSERT INTO book_authors (book_id, authors_id) VALUES (6, 9);
-INSERT INTO book_authors (book_id, authors_id) VALUES (6, 10);
-INSERT INTO book_authors (book_id, authors_id) VALUES (7, 11);
-INSERT INTO book_authors (book_id, authors_id) VALUES (7, 12);
-INSERT INTO book_authors (book_id, authors_id) VALUES (7, 2);
-INSERT INTO book_authors (book_id, authors_id) VALUES (8, 13);
-INSERT INTO book_authors (book_id, authors_id) VALUES (9, 14);
-INSERT INTO book_authors (book_id, authors_id) VALUES (9, 15);
-INSERT INTO book_authors (book_id, authors_id) VALUES (10, 16);
-INSERT INTO book_authors (book_id, authors_id) VALUES (11, 17);
-INSERT INTO book_authors (book_id, authors_id) VALUES (11, 18);
-INSERT INTO book_authors (book_id, authors_id) VALUES (12, 19);
-INSERT INTO book_authors (book_id, authors_id) VALUES (12, 20);
-INSERT INTO book_authors (book_id, authors_id) VALUES (13, 1);
-INSERT INTO book_authors (book_id, authors_id) VALUES (14, 2);
-INSERT INTO book_authors (book_id, authors_id) VALUES (14, 3);
-INSERT INTO book_authors (book_id, authors_id) VALUES (15, 4);
-INSERT INTO book_authors (book_id, authors_id) VALUES (15, 5);
-INSERT INTO book_authors (book_id, authors_id) VALUES (16, 6);
-INSERT INTO book_authors (book_id, authors_id) VALUES (17, 7);
-INSERT INTO book_authors (book_id, authors_id) VALUES (17, 8);
-INSERT INTO book_authors (book_id, authors_id) VALUES (18, 9);
-INSERT INTO book_authors (book_id, authors_id) VALUES (18, 10);
-INSERT INTO book_authors (book_id, authors_id) VALUES (19, 11);
-INSERT INTO book_authors (book_id, authors_id) VALUES (20, 12);
-INSERT INTO book_authors (book_id, authors_id) VALUES (20, 13);
+INSERT INTO book_authors (book_id, authors_id)
+VALUES (1, 1),
+       (1, 2),
+       (2, 3),
+       (2, 4),
+       (3, 5),
+       (3, 3),
+       (4, 6),
+       (4, 7),
+       (5, 8),
+       (6, 9),
+       (6, 10),
+       (7, 11),
+       (7, 12),
+       (7, 2),
+       (8, 13),
+       (9, 14),
+       (9, 15),
+       (10, 16),
+       (11, 17),
+       (11, 18),
+       (12, 19),
+       (12, 20),
+       (13, 1),
+       (14, 2),
+       (14, 3),
+       (15, 4),
+       (15, 5),
+       (16, 6),
+       (17, 7),
+       (17, 8),
+       (18, 9),
+       (18, 10),
+       (19, 11),
+       (20, 12),
+       (20, 13),
+       (21, 14),
+       (22, 15),
+       (23, 16),
+       (24, 17),
+       (25, 18),
+       (26, 19),
+       (27, 20),
+       (28, 1),
+       (29, 2),
+       (30, 3),
+       (31, 4),
+       (32, 5),
+       (33, 6),
+       (34, 7),
+       (35, 8),
+       (36, 9),
+       (37, 10),
+       (38, 11),
+       (39, 12),
+       (40, 13);

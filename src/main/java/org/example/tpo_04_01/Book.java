@@ -16,6 +16,11 @@ public class Book {
     private Publisher publisher;
 
     @ManyToMany
+    @JoinTable(
+            name = "book_authors",
+            joinColumns = @JoinColumn(name = "book_id"),
+            inverseJoinColumns = @JoinColumn(name = "authors_id")
+    )
     private List<Author> authors = new ArrayList<>();
 
     public Book() {}
@@ -75,8 +80,6 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", price=" + price +
-                ", publisher=" + publisher +
-                ", authors=" + authors.stream().toList() +
                 '}';
     }
 }
