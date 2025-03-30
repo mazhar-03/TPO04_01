@@ -14,16 +14,15 @@ public class Publisher
     private String address;
     private String phone;
 
-    @OneToMany(mappedBy = "publisherId", fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "publisher", fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     private List<Book> bookList = new ArrayList<>();
 
     public Publisher(){};
 
-    public Publisher(String name, String address, String phone, List<Book> bookList) {
+    public Publisher(String name, String address, String phone) {
         this.name = name;
         this.address = address;
         this.phone = phone;
-        this.bookList = bookList;
     }
 
     public int getId() {
@@ -77,7 +76,7 @@ public class Publisher
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
-                ", bookList=" + bookList +
+                ", bookList=" + bookList.stream().toList() +
                 '}';
     }
 }

@@ -1,6 +1,7 @@
 package org.example.tpo_04_01;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -12,13 +13,12 @@ public class Author {
     private String lastName;
 
     @ManyToMany(mappedBy = "authors")
-    private List<Book> books;
+    private List<Book> books = new ArrayList<>();
 
     public Author() {};
-    public Author(String firstName, String lastName, List<Book> books) {
+    public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.books = books;
     }
 
     public int getId() {
@@ -63,7 +63,7 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
+                ", books=" + books.stream().toList()+
                 '}';
     }
 }

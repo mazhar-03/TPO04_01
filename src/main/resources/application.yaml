@@ -10,9 +10,9 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: none
   sql:
     init:
-      data-locations: classpath:sql-data/*.sql
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql

@@ -10,25 +10,23 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private String author;
     private double price;
 
     @ManyToOne
-    private Publisher publisherId;
+    private Publisher publisher;
 
     @ManyToMany
     private List<Author> authors = new ArrayList<>();
 
     public Book() {}
+
+    public Book(String title, double price) {
+        this.title = title;
+        this.price = price;
+    }
+
     public Long getId() {
         return id;
-    }
-    public Book(String title, String author, double price, Publisher publisherId, List<Author> authors) {
-        this.title = title;
-        this.author = author;
-        this.price = price;
-        this.publisherId = publisherId;
-        this.authors = authors;
     }
 
     public void setId(Long id) {
@@ -43,20 +41,12 @@ public class Book {
         this.title = title;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public Publisher getPublisher() {
-        return publisherId;
+        return publisher;
     }
 
     public void setPublisher(Publisher publisher) {
-        this.publisherId = publisher;
+        this.publisher = publisher;
     }
 
     public double getPrice() {
@@ -84,10 +74,9 @@ public class Book {
         return "Book{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
                 ", price=" + price +
-                ", publisherId=" + publisherId +
-                ", authors=" + authors +
+                ", publisher=" + publisher +
+                ", authors=" + authors.stream().toList() +
                 '}';
     }
 }
